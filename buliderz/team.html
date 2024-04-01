@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Builderz</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <style>
+       
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        header {
+            background-color: orange;
+            color: #fff;
+            padding: 20px;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 24px;
+        }
+
+        .header1 {
+            display: inline-flex; 
+            
+        }
+
+        nav{
+            background-color: black;
+            height: 50px;
+            margin: auto;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 20px;
+            padding: 20px;
+            
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+            padding: 20px;
+            margin: auto;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        nav ul li a:hover {
+            color: orange;
+        }
+
+        .nav-button{
+    width: 150px;
+    height: 40px;
+    margin-left: 900px;
+    margin-right: 80px;
+    position: absolute;
+    background-color: black;
+    border: 1px solid white;
+    margin-top: -60px;
+    right: 0;
+    transform:translateY(-37%);
+    color: white;
+}
+.nav-button button{
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    border: none;
+    cursor: pointer;
+}
+.nav-button:hover{
+    background-color: orange;
+    color: black;
+}
+
+        section {
+            margin: 20px 0;
+            padding: 0 20px;
+        }
+
+        h2 {
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+
+        .products {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        grid-gap: 20px;
+        padding: 100px;
+        margin-top: -100px;
+    }
+    .product {
+        text-align: center;
+        background-color: black;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        overflow: hidden;
+        box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    }
+    
+    .product img {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+    }
+    .details {
+        padding: 10px;
+    }
+    .details h6 {
+        margin-top: 10px;
+        margin-bottom: 5px;
+        text-align: left;
+    }
+    .details p {
+        margin: 5px 0;
+        text-align: left;
+        font-size: 80%;
+    }
+    .price {
+        color: green;
+        font-weight: bold;
+        margin-top: 10px;
+    }
+
+        .contact-info h2 {
+            margin-top: 20px;
+        }
+
+        .footerpage{
+    display: flex;
+    color: rgb(242, 237, 237);
+    height: 380px;
+    padding: 10px;
+    justify-content: space-around;
+    border-radius: 10px;
+    padding-top: 3px;
+    animation: slideInLeft;
+    animation-duration: 1s;
+    padding: 50px;
+
+}
+.footerpage i{
+    font-size: 30px;
+}
+.footerpage h1{
+    font-size: 45px;
+}
+.footerpage p{
+    font-size: 20px;
+}
+.footerpage{
+    background-color: rgb(10, 13, 58);
+}
+.footer4{
+    padding-top: 60px;
+}
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header1">
+        <h1 style="font-size: 50px;color: black;">Builderz</h1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+        <div>
+            <h2 style="color: black;">Opening Hour</h2>
+            <p style="color: black;">Mon - Fri, 8:00 - 9:00</p>
+        </div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    
+        <div>
+            <h2 style="color: black;">Call Us</h2>
+            <p><a style="color: black;" href="tel:+0123456789">+012 345 6789</a></p>
+        </div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <div>
+            <h2 style="color: black;">Email Us</h2>
+            <p><a style="color: black;" href="mailto:info@example.com">info@example.com</a></p>
+        </div>
+        </div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Service</a></li>
+                <li><a href="#">Team</a></li>
+                <li><a href="#">Project</a></li>
+                <li><a href="#">Pages</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <h1 style="font-size: 60px;text-align: center;text-decoration: underline;color: black;">Our Team</h1>
+        <br>
+        
+        <p style="font-size: 30px;text-align: center;color: black;">Home / Our Team</p>
+    </header>
+    
+    <p style="text-align: center;font-size: 20px;color: orange;">Our Team</p>
+    <h1 style="color: black;text-align: center;font-size: 40px;">Meet Our Engineer</h1>
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <div class="products">
+       
+        
+        <div class="product">
+            <img src="https://demo.htmlcodex.com/969/construction-company-website-template/img/team-1.jpg" alt="image">
+            <div class="details">
+                <p style="font-size: 20px;text-align: center;color: orange;">Adam Phillips</p>
+                <p style="text-align: center;color: white;">CEO & Founder</p>
+            </div>
+        </div>
+        <div class="product">
+            <img src="https://demo.htmlcodex.com/969/construction-company-website-template/img/team-2.jpg" alt="image">
+            <div class="details">
+                <p style="font-size: 20px;text-align: center;color: orange;">Dylan Adams</p>
+                <p style="color: white;text-align: center;">Civil Engineer</p>
+                
+            </div>
+        </div>
+        <div class="product">
+            <img src="https://demo.htmlcodex.com/969/construction-company-website-template/img/team-3.jpg" alt="image">
+            <div class="details">
+                <p style="text-align: center;font-size: 20px;color: orange;">Jhon Doe</p>
+                <p style="color: white;text-align: center;">Interior Designer</p>
+                
+            </div>
+        </div>
+        <div class="product">
+            <img src="https://demo.htmlcodex.com/969/construction-company-website-template/img/team-4.jpg" alt="image">
+            <div class="details">
+                <p style="text-align: center;font-size: 20px;color: orange;">Josh Dunn</p>
+                <p style="text-align: center;color: white;">Painter</p>
+               
+            </div>
+        </div>
+    </div>
+    <div class="products">
+        <div class="product">
+            <img src="https://demo.htmlcodex.com/969/construction-company-website-template/img/team-1.jpg" alt="image">
+            <div class="details">
+                <p style="color: orange;font-size: 20px;text-align: center;">Adam Phillips</p>
+                <p style="text-align: center;color: white;">CEO & Founder</p>
+            </div>
+        </div>
+        <div class="product">
+            <img src="https://demo.htmlcodex.com/969/construction-company-website-template/img/team-2.jpg" alt="image">
+            <div class="details">
+                <p style="font-size: 20px;text-align: center;color: orange;">Dylan Adams</p>
+                <p style="color: white;text-align: center;">Civil Engineer</p>
+            </div>
+        </div>
+        <div class="product">
+            <img src="https://demo.htmlcodex.com/969/construction-company-website-template/img/team-3.jpg" alt="image">
+            <div class="details">
+                <p style="text-align: center;font-size: 20px;color: orange;">Jhon Doe</p>
+                <p style="color: white;text-align: center;">Interior Designer</p>
+            </div>
+        </div>
+        <div class="product">
+            <img src="https://demo.htmlcodex.com/969/construction-company-website-template/img/team-4.jpg" alt="image">
+            <div class="details">
+                <p style="text-align: center;font-size: 20px;color: orange;">Josh Dunn</p>
+                <p style="text-align: center;color: white;">Painter</p>
+            </div>
+        </div>
+        
+    </div>
+
+    <footer>
+        <div class="footerpage">
+            <div class="footer1">
+              <h3 style="color: orange;"> Office Contact</h3>
+              <i class="fa-solid fa-location-dot"></i>123 street mumbai india<br><br>
+              <i class="fa-solid fa-phone"></i>+91000000000 <br><br>
+              <i class="fa-solid fa-envelopes-bulk"></i> info@example.com <br><br>
+    
+              <i class="fa-brands fa-twitter"></i><i class="fa-brands fa-youtube"></i> <i class="fa-brands fa-whatsapp"></i> <i class="fa-brands fa-linkedin"></i> <i class="fa-brands fa-square-instagram"></i>
+            </div>
+            <div class="footer2">
+                <h2 style="color: orange;"> Services Areas</h2>
+                <p>
+                > Building construction <br><br>
+                > House Renovation <br><br>
+                > Architecture Design<br><br>
+                > Interior Design<br><br>
+                > Painting
+            </p>
+            </div>
+            <div class="footer3">
+                <h2 style="color: orange;"> Useful Pages</h2> 
+                <p>
+                > About Us <br><br>
+                > Contact Us <br><br>
+                > Our Team <br><br>
+                > Projects <br><br>
+                > Tesimonial 
+                
+            </p>
+        </div>
+        </div>
+        <div class="container copyright">
+            <div class="row">
+                <div class="col-md-6">
+                    <p>&copy; <a href="#">Your Site Name</a>, All Right Reserved.</p>
+                </div>
+             
+            </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,652 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>project Website</title>
+    <link rel="stylesheet" a href="styless.css">
+    <link rel="stylesheet" type="text/css" href="css/animate.css">
+	<link rel="icon" href="images/sitelogo.png" type="image/gif" sizes="16x16">
+	
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</script>
+	
+<script>
+    function show(tab_id){
+        id=tab_id+ "_result";
+
+        if(tab_id=="tab1"){
+            
+            document.getElementById(id).style.display="block";
+            document.getElementById("tab2_result").style.display="none";
+            document.getElementById("tab3_result").style.display="none";
+            document.getElementById("tab4_result").style.display="none";
+            document.getElementById("tab5_result").style.display="none";
+            document.getElementById("tab1").classList.add("active");
+            document.getElementById("tab2").classList.remove("active");
+            document.getElementById("tab3").classList.remove("active");
+            document.getElementById("tab4").classList.remove("active");
+            document.getElementById("tab5").classList.remove("active");
+        }
+        
+        if(tab_id=="tab2"){
+            
+            document.getElementById("tab1_result").style.display="none";
+            document.getElementById(id).style.display="block";
+            document.getElementById("tab3_result").style.display="none";
+            document.getElementById("tab4_result").style.display="none";
+            document.getElementById("tab5_result").style.display="none";
+            document.getElementById("tab1").classList.remove("active");
+            document.getElementById("tab2").classList.add("active");
+            document.getElementById("tab3").classList.remove("active");
+            document.getElementById("tab4").classList.remove("active");
+            document.getElementById("tab5").classList.remove("active");
+        }
+        
+        if(tab_id=="tab3"){
+            
+            document.getElementById("tab1_result").style.display="none";
+            document.getElementById("tab2_result").style.display="none";
+            document.getElementById(id).style.display="block";
+            document.getElementById("tab4_result").style.display="none";
+            document.getElementById("tab5_result").style.display="none";
+            document.getElementById("tab1").classList.remove("active");
+            document.getElementById("tab2").classList.remove("active");
+            document.getElementById("tab3").classList.add("active");
+            document.getElementById("tab4").classList.remove("active");
+            document.getElementById("tab5").classList.remove("active");
+        }
+        if(tab_id=="tab4"){
+            
+            document.getElementById("tab1_result").style.display="none";
+            document.getElementById("tab2_result").style.display="none";
+            document.getElementById("tab3_result").style.display="none";
+            document.getElementById(id).style.display="block";
+            document.getElementById("tab5_result").style.display="none";
+            document.getElementById("tab1").classList.remove("active");
+            document.getElementById("tab2").classList.remove("active");
+            document.getElementById("tab3").classList.remove("active");
+            document.getElementById("tab4").classList.add("active");
+            document.getElementById("tab5").classList.remove("active");
+        }
+        if(tab_id=="tab5"){
+            
+            document.getElementById("tab1_result").style.display="none";
+            document.getElementById("tab2_result").style.display="none";
+            document.getElementById("tab3_result").style.display="none";
+            document.getElementById("tab4_result").style.display="none";
+            document.getElementById(id).style.display="block";
+            document.getElementById("tab1").classList.remove("active");
+            document.getElementById("tab2").classList.remove("active");
+            document.getElementById("tab3").classList.remove("active");
+            document.getElementById("tab4").classList.remove("active");
+            document.getElementById("tab5").classList.add("active");
+        }
+        }
+        
+    
+    </script>
+   
+</head>
+<body>
+    <div class="header">
+        <h1>Our Projects</h1>
+        <h2>Home  / Our Projects</h2>
+
+    </div>
+    <div class="container">
+    <h1>Our Projects</h1>
+    <h2>Visit Our Projects</h2>
+    
+    <div class="container">
+        
+		
+<div class="c1">
+		<span class="button">
+            <button onclick="return show(this.id);" id="tab1" class="tabs_class active">All</button>&nbsp;&nbsp;&nbsp;&nbsp;
+            <button onclick="return show(this.id);" id="tab2" class="tabs_class">COMPLETE</button>&nbsp;&nbsp;&nbsp;&nbsp;
+            <button onclick="return show(this.id);" id="tab3" class="tabs_class">RUNNING</button>&nbsp;&nbsp;&nbsp;&nbsp;
+            <button onclick="return show(this.id);" id="tab4" class="tabs_class">UPCOMING</button>&nbsp;&nbsp;&nbsp;&nbsp;
+              
+                </span>
+        </div>
+            
+            <!-----------------------------------------------tabs-section--------------------------------------------------------------------------------->	
+                
+                
+            <div id="tab1_result">
+                    <div class="row">
+                    
+                
+                    <div class="col-sm-3 ">
+                    <!-----------------------------------------------tabs-section-image-1-------------------------------------------------------------------------------->	
+                    <span class="size">		
+                <img src= "image1.jpg" class="img-fluid">
+                
+                <span class="overlay">
+                    <span class="text">
+                <p>Lorem ipsum dolor sit amet elit. Phasel nec pretium mi. Curabit facilis ornare velit non. Aliqu metus tortor
+                    auctor id gravi condime, viverra quis sem.</p>
+                    </span>
+                </span>
+                    </span>	
+                <div class="portfolio-text">
+                    <h3>Project Name</h3>
+                    <div class="b1" href="portfolio-1.jpg" data-lightbox="portfolio">+</div>
+                    </div>
+                        
+                </div>
+        
+                    <!-----------------------------------------------tabs-section-image-2-------------------------------------------------------------------------------->
+                    <div  class="col-sm-3 offset-1">
+        
+                    <span class="size">		
+                <img src= "image2.jpg" class="img-fluid">
+                <span class="overlay">
+                    <span class="text">
+                <p>Lorem ipsum dolor sit amet elit. Phasel nec pretium mi. Curabit facilis ornare velit non. Aliqu metus tortor
+                    auctor id gravi condime, viverra quis sem.</p>
+                    </span>
+                </span>
+                    </span>	
+                    <div class="portfolio-text">
+                        <h3>Project Name</h3>
+                        <div class="b1" href="portfolio-1.jpg" data-lightbox="portfolio">+</div>
+                        </div>
+                        
+                </div>
+        
+                    <!-----------------------------------------------tabs-section-image-3-------------------------------------------------------------------------------->
+                        <div class="col-sm-3 offset-1">
+        
+                    <span class="size">		
+                <img src= "image3.jpg" class="img-fluid">
+                <span class="overlay">
+                    <span class="text">
+                <p>Lorem ipsum dolor sit amet elit. Phasel nec pretium mi. Curabit facilis ornare velit non. Aliqu metus tortor
+                    auctor id gravi condime, viverra quis sem.</p>
+                    </span>
+                </span>
+                    </span>	
+                    <div class="portfolio-text">
+                        <h3>Project Name</h3>
+                        <div class="b1" href="portfolio-1.jpg." data-lightbox="portfolio">+</div>
+                        </div>
+                        
+                </div>
+                </div>
+                <br><br>
+                
+                
+                
+                
+                
+                
+                <div class="row">
+                    <div class="col-sm-3 ">
+                    <!-----------------------------------------------tabs-section-image-4-------------------------------------------------------------------------------->
+                    <span class="size">		
+                <img src= "image4.jpg" class="img-fluid">
+                <span class="overlay">
+                    <span class="text">
+                <p>Lorem ipsum dolor sit amet elit. Phasel nec pretium mi. Curabit facilis ornare velit non. Aliqu metus tortor
+                    auctor id gravi condime, viverra quis sem.</p>
+                    </span>
+                </span>
+                    </span>	
+                    <div class="portfolio-text">
+                        <h3>Project Name</h3>
+                        <div class="b1" href="portfolio-1.jpg" data-lightbox="portfolio">+</div>
+                        </div>
+                        
+                </div>
+                    <div  class="col-sm-3 offset-1">
+                    <!-----------------------------------------------tabs-section-image-5-------------------------------------------------------------------------------->
+                    <span class="size">		
+                <img src= "image5.jpg" class="img-fluid">
+                <span class="overlay">
+                    <span class="text">
+                <p>Lorem ipsum dolor sit amet elit. Phasel nec pretium mi. Curabit facilis ornare velit non. Aliqu metus tortor
+                    auctor id gravi condime, viverra quis sem.</p>
+                    </span>
+                </span>
+                    </span>	
+                    <div class="portfolio-text">
+                        <h3>Project Name</h3>
+                        <div class="b1" href="portfolio-1.jpg" data-lightbox="portfolio">+</div>
+                        </div>
+                        
+                </div>
+                        <div class="col-sm-3 offset-1">
+                    <!-----------------------------------------------tabs-section-image-6-------------------------------------------------------------------------------->
+                    <span class="size">		
+                <img src= "image6.jpg" class="img-fluid">
+                <span class="overlay">
+                    <span class="text">
+                <p>Lorem ipsum dolor sit amet elit. Phasel nec pretium mi. Curabit facilis ornare velit non. Aliqu metus tortor
+                    auctor id gravi condime, viverra quis sem.</p>
+                    </span>
+                </span>
+                    </span>	
+                    <div class="portfolio-text">
+                        <h3>Project Name</h3>
+                        <div class="b1" href="portfolio-1.jpg" data-lightbox="portfolio">+</div>
+                        </div>
+                        
+                </div>
+                </div>
+                
+            </div>
+                
+                
+            
+                </div>
+            
+                
+                
+                
+            
+            <div id="tab2_result" style="display: none">
+                
+                <div class="row">
+                    <div class="col-sm-3 ">
+        
+                    <span class="size">		
+                <img src= "image1.jpg" class="img-fluid">
+                <span class="overlay">
+                    <span class="text">
+                <p>Lorem ipsum dolor sit amet elit. Phasel nec pretium mi. Curabit facilis ornare velit non. Aliqu metus tortor
+                    auctor id gravi condime, viverra quis sem.</p>
+                    </span>
+                </span>
+                    </span>	
+                    <div class="portfolio-text">
+                        <h3>Project Name</h3>
+                        <div class="b1" href="portfolio-1.jpg" data-lightbox="portfolio">+</div>
+                        </div>
+                        
+                </div>
+                    <div  class="col-sm-3 offset-1">
+        
+                    <span class="size">		
+                <img src= "image2.jpg" class="img-fluid">
+                <span class="overlay">
+                    <span class="text">
+                <p>Lorem ipsum dolor sit amet elit. Phasel nec pretium mi. Curabit facilis ornare velit non. Aliqu metus tortor
+                    auctor id gravi condime, viverra quis sem.</p>
+                    </span>
+                </span>
+                    </span>	
+                    <div class="portfolio-text">
+                        <h3>Project Name</h3>
+                        <div class="b1" href="portfolio-1.jpg" data-lightbox="portfolio">+</div>
+                        </div>
+                        
+                </div>
+                        <div class="col-sm-3 offset-1">
+        
+                    <span class="size">		
+                <img src= "image3.jpg" class="img-fluid">
+                <span class="overlay">
+                    <span class="text">
+                <p>Lorem ipsum dolor sit amet elit. Phasel nec pretium mi. Curabit facilis ornare velit non. Aliqu metus tortor
+                    auctor id gravi condime, viverra quis sem.</p>
+                    </span>
+                </span>
+                    </span>	
+                    <div class="portfolio-text">
+                        <h3>Project Name</h3>
+                        <div class="b1" href="portfolio-1.jpg" data-lightbox="portfolio">+</div>
+                        </div>
+                </div>
+                </div>
+                <br><br>
+                
+                <div class="row">
+                    <div class="col-sm-3 ">
+        
+                    <span class="size">		
+                <img src= "image4.jpg" class="img-fluid">
+                <span class="overlay">
+                    <span class="text">
+                <p>Lorem ipsum dolor sit amet elit. Phasel nec pretium mi. Curabit facilis ornare velit non. Aliqu metus tortor
+                    auctor id gravi condime, viverra quis sem.</p>
+                    </span>
+                </span>
+                    </span>	
+
+                    <div class="portfolio-text">
+                        <h3>Project Name</h3>
+                        <div class="b1" href="portfolio-1.jpg" data-lightbox="portfolio">+</div>
+                        </div>
+                        
+                </div>
+                    <div  class="col-sm-3 offset-1">
+        
+                    <span class="size">		
+                <img src= "image5.jpg" class="img-fluid">
+                <span class="overlay">
+                    <span class="text">
+                <p>Lorem ipsum dolor sit amet elit. Phasel nec pretium mi. Curabit facilis ornare velit non. Aliqu metus tortor
+                    auctor id gravi condime, viverra quis sem.</p>
+                    </span>
+                </span>
+                    </span>	
+                    <div class="portfolio-text">
+                        <h3>Project Name</h3>
+                        <div class="b1" href="portfolio-1.jpg" data-lightbox="portfolio">+</div>
+                        </div>
+                </div>
+                        <div class="col-sm-3 offset-1">
+        
+                    <span class="size">		
+                <img src= "image6.jpg" class="img-fluid">
+                <span class="overlay">
+                    <span class="text">
+                <p>Lorem ipsum dolor sit amet elit. Phasel nec pretium mi. Curabit facilis ornare velit non. Aliqu metus tortor
+                    auctor id gravi condime, viverra quis sem.</p>
+                    </span>
+                </span>
+                    </span>	
+                    <div class="portfolio-text">
+                        <h3>Project Name</h3>
+                        <div class="b1" href="portfolio-1.jpg" data-lightbox="portfolio">+</div>
+                        </div>
+                </div>
+                </div>
+                
+                </div>
+                
+                
+                
+                
+                
+            
+            <div id="tab3_result" style="display: none">
+                <div class="row ">
+                    <div class="col-sm-3   ">
+        
+                    <span class="size">		
+                <img src= "image1.jpg" class="img-fluid">
+                <span class="overlay">
+                    <span class="text">
+                <p>Lorem ipsum dolor sit amet elit. Phasel nec pretium mi. Curabit facilis ornare velit non. Aliqu metus tortor
+                    auctor id gravi condime, viverra quis sem.</p>
+                    </span>
+                </span>
+                    </span>	
+                    <div class="portfolio-text">
+                        <h3>Project Name</h3>
+                        <div class="b1" href="portfolio-2.jpg" data-lightbox="portfolio">+</div>
+                        </div>
+                        
+                </div>
+                    <div  class="col-sm-3  offset-1">
+        
+                    <span class="size">		
+                <img src= "image2.jpg" class="img-fluid">
+                <span class="overlay">
+                    <span class="text">
+                <p>Lorem ipsum dolor sit amet elit. Phasel nec pretium mi. Curabit facilis ornare velit non. Aliqu metus tortor
+                    auctor id gravi condime, viverra quis sem.</p>
+                    </span>
+                </span>
+                    </span>	
+                    <div class="portfolio-text">
+                        <h3>Project Name</h3>
+                        <div class="b1" href="img/portfolio-1.jpg" data-lightbox="portfolio">+</div>
+                        </div>
+                </div>
+                        <div class="col-sm-3 offset-1">
+        
+                    <span class="size">		
+                <img src= "image5.jpg" class="img-fluid">
+                <span class="overlay">
+                    <span class="text">
+                <p>Lorem ipsum dolor sit amet elit. Phasel nec pretium mi. Curabit facilis ornare velit non. Aliqu metus tortor
+                    auctor id gravi condime, viverra quis sem.</p>
+                    </span>
+                </span>
+                    </span>	
+                    <div class="portfolio-text">
+                        <h3>Project Name</h3>
+                        <div class="b1" href="img/portfolio-1.jpg" data-lightbox="portfolio">+</div>
+                        </div>
+                </div>
+                </div>
+                <br><br>
+                <div class="row">
+                    <div class="col-sm-3 ">
+        
+                    <span class="size">		
+                <img src= "image4.jpg" class="img-fluid">
+                <span class="overlay">
+                    <span class="text">
+                <p>Lorem ipsum dolor sit amet elit. Phasel nec pretium mi. Curabit facilis ornare velit non. Aliqu metus tortor
+                    auctor id gravi condime, viverra quis sem.</p>
+                    </span>
+                </span>
+                    </span>	
+                    <div class="portfolio-text">
+                        <h3>Project Name</h3>
+                        <div class="b1" href="img/portfolio-1.jpg" data-lightbox="portfolio">+</div>
+                        </div>
+                </div>
+                    <div  class="col-sm-3 offset-1">
+        
+                    <span class="size">		
+                <img src= "image5.jpg" class="img-fluid">
+                <span class="overlay">
+                    <span class="text">
+                <p>Lorem ipsum dolor sit amet elit. Phasel nec pretium mi. Curabit facilis ornare velit non. Aliqu metus tortor
+                    auctor id gravi condime, viverra quis sem.</p>
+                    </span>
+                </span>
+                    </span>	
+                    <div class="portfolio-text">
+                        <h3>Project Name</h3>
+                        <div class="b1" href="img/portfolio-1.jpg" data-lightbox="portfolio">+</div>
+                        </div>
+                        
+                </div>
+                        <div class="col-sm-3 offset-1">
+        
+                    <span class="size">		
+                <img src= "image6.jpg" class="img-fluid">
+                <span class="overlay">
+                    <span class="text">
+                <p>Lorem ipsum dolor sit amet elit. Phasel nec pretium mi. Curabit facilis ornare velit non. Aliqu metus tortor
+                    auctor id gravi condime, viverra quis sem.</p>
+                    </span>
+                </span>
+                    </span>	
+                    <div class="portfolio-text">
+                        <h3>Project Name</h3>
+                        <div class="b1" href="img/portfolio-1.jpg" data-lightbox="portfolio">+</div>
+                        </div>
+                        
+                </div>
+                </div>
+                <br><br>
+                </div>
+                
+                
+                
+                
+                
+            
+                
+                <div id="tab4_result" style="display: none">
+                <div class="row">
+                    <div class="col-sm-3 ">
+        
+                    <span class="size">		
+                <img src= "image6.jpg" class="img-fluid">
+                <span class="overlay">
+                    <span class="text">
+                <p>Lorem ipsum dolor sit amet elit. Phasel nec pretium mi. Curabit facilis ornare velit non. Aliqu metus tortor
+                    auctor id gravi condime, viverra quis sem.</p>
+                    </span>
+                </span>
+                    </span>	
+                    <div class="portfolio-text">
+                        <h3>Project Name</h3>
+                        <div class="b1" href="img/portfolio-1.jpg" data-lightbox="portfolio">+</div>
+                        </div>
+                </div>
+                    <div  class="col-sm-3 offset-1">
+        
+                    <span class="size">		
+                <img src= "image2.jpg" class="img-fluid">
+                <span class="overlay">
+                    <span class="text">
+                <p>Lorem ipsum dolor sit amet elit. Phasel nec pretium mi. Curabit facilis ornare velit non. Aliqu metus tortor
+                    auctor id gravi condime, viverra quis sem.</p>
+                    </span>
+                </span>
+                    </span>	
+                    <div class="portfolio-text">
+                        <h3>Project Name</h3>
+                        <div class="b1" href="img/portfolio-1.jpg" data-lightbox="portfolio">+</div>
+                        </div>
+                        
+                </div>
+                        <div class="col-sm-3 offset-1">
+        
+                    <span class="size">		
+                <img src= "image4.jpg" class="img-fluid">
+                <span class="overlay">
+                    <span class="text">
+                <p>Lorem ipsum dolor sit amet elit. Phasel nec pretium mi. Curabit facilis ornare velit non. Aliqu metus tortor
+                    auctor id gravi condime, viverra quis sem.</p>
+                    </span>
+                </span>
+                    </span>	
+                    <div class="portfolio-text">
+                        <h3>Project Name</h3>
+                        <div class="b1" href="img/portfolio-1.jpg" data-lightbox="portfolio">+</div>
+                        </div>
+                </div>
+                </div>
+                <br><br>
+                    <div class="row">
+                    <div class="col-sm-3 ">
+        
+                    <span class="size">		
+                <img src= "image4.jpg" class="img-fluid" >
+                <span class="overlay">
+                    <span class="text">
+                <p>Lorem ipsum dolor sit amet elit. Phasel nec pretium mi. Curabit facilis ornare velit non. Aliqu metus tortor
+                    auctor id gravi condime, viverra quis sem.</p>
+                    </span>
+                </span>
+                    </span>	
+                    <div class="portfolio-text">
+                        <h3>Project Name</h3>
+                        <div class="b1" href="img/portfolio-1.jpg" data-lightbox="portfolio">+</div>
+                        </div>
+                        
+                </div>
+                    <div  class="col-sm-3 offset-1">
+        
+                    <span class="size">		
+                <img src= "image3.jpg" class="img-fluid">
+                <span class="overlay">
+                    <span class="text">
+                <p>Lorem ipsum dolor sit amet elit. Phasel nec pretium mi. Curabit facilis ornare velit non. Aliqu metus tortor
+                    auctor id gravi condime, viverra quis sem.</p>
+                    </span>
+                </span>
+                    </span>	
+                    <div class="portfolio-text">
+                        <h3>Project Name</h3>
+                        <div class="b1" href="img/portfolio-1.jpg" data-lightbox="portfolio">+</div>
+                        </div>
+                        
+                </div>
+                        <div class="col-sm-3 offset-1">
+        
+                    <span class="size">		
+                <img src= "image1.jpg" class="img-fluid">
+                <span class="overlay">
+                    <span class="text">
+                <p>Lorem ipsum dolor sit amet elit. Phasel nec pretium mi. Curabit facilis ornare velit non. Aliqu metus tortor
+                    auctor id gravi condime, viverra quis sem.</p>
+                    </span>
+                </span>
+                    </span>	
+                    <div class="portfolio-text">
+                        <h3>Project Name</h3>
+                        <div class="b1" href="img/portfolio-1.jpg" data-lightbox="portfolio">+</div>
+                        </div>
+                        
+                </div>
+                </div>
+                <br><br>
+                
+                </div>
+                
+                
+                
+                
+                
+                
+                
+                
+
+                <br><br>
+                    
+                    
+                    
+                
+                <br><br>
+                </div>
+                </div>
+                
+            </div>
+            <footer>
+                <div class="footerpage">
+                    <div class="footer1">
+                      <h3 style="color: orange;"> Office Contact</h3>
+                      <i class="fa-solid fa-location-dot"></i>123 Street, mumbai, INDIA<br><br>
+                      <i class="fa-solid fa-phone"></i> 9100000000 <br><br>
+                      <i class="fa-solid fa-envelopes-bulk"></i> info@example.com <br><br>
+            
+                      <i class="fa-brands fa-twitter"></i><i class="fa-brands fa-youtube"></i> <i class="fa-brands fa-whatsapp"></i> <i class="fa-brands fa-linkedin"></i> <i class="fa-brands fa-square-instagram"></i>
+                    </div>
+                    <div class="footer2">
+                        <h2 style="color: orange;"> Services Areas</h2>
+                        <p>
+                        > Building construction <br><br>
+                        > House Renovation <br><br>
+                        > Architecture Design<br><br>
+                        > Interior Design<br><br>
+                        > Painting
+                    </p>
+                    </div>
+                    <div class="footer3">
+                        <h2 style="color: orange;"> Useful Pages</h2> 
+                        <p>
+                        > About Us <br><br>
+                        > Contact Us <br><br>
+                        > Our Team <br><br>
+                        > Projects <br><br>
+                        > Tesimonial 
+                        
+                    </p>
+                </div>
+                </div>
+                <div class="container copyright">
+                    <div class="row">
+                        <div class="col-md-7">
+                            <p>&copy; <a href="#">Your Site Name</a>, All Right Reserved.</p>
+                        </div>
+                     
+                    </div>
+            </footer>
+    
+   
+</body>
+</html>
